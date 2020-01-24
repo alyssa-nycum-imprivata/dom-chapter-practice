@@ -5,7 +5,10 @@ blogHeader.textContent = "Welcome to the Alyssa Blog";
 
 // Number Two
 
-blogHeader.classList.add("important");
+const headers = document.querySelectorAll(".article__header");
+for (let i = 0; i < headers.length; i++) {
+headers[i].classList.add("important");
+}
 
 // Number Three
 
@@ -16,5 +19,7 @@ element.classList.remove("dashed");
 
 const footer = document.querySelector(".article__footer");
 footer.classList.add("goldenrod");
+
+
 
 
